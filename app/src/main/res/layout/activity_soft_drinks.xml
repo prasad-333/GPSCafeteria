@@ -1,0 +1,352 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/ablToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layouttopd"
+        android:layout_below="@+id/ablToolbar"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make Order"
+            android:fontFamily="cursive"
+            android:textSize="18sp"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="quantity"
+            android:fontFamily="cursive"
+            android:textSize="18sp"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutd1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layouttopd">
+
+        <ImageView
+            android:id="@+id/imgd1"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/app_name"
+            android:padding="7dp"
+            app:srcCompat="@drawable/drinks_750ml_h2go" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/imgd1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkd1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="750ml H2GO" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:textSize="12sp"
+                android:text="50tk" />
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:id="@+id/spinnerd1"
+            android:minWidth="1dp"
+            android:minHeight="1dp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutd2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutd1">
+
+        <ImageView
+            android:id="@+id/imgd2"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/app_name"
+            android:padding="7dp"
+            app:srcCompat="@drawable/drinks_7up" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/imgd2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkd2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="7UP 1000ml" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:textSize="12sp"
+                android:text="60tk" />
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:id="@+id/spinnerd2"
+            android:minWidth="1dp"
+            android:minHeight="1dp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutd3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutd2">
+
+        <ImageView
+            android:id="@+id/imgd3"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/app_name"
+            android:padding="7dp"
+            app:srcCompat="@drawable/drinks_crisp_apple" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/imgd3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkd3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="Crisp Apple 750ml" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:textSize="12sp"
+                android:text="70tk" />
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:id="@+id/spinnerd3"
+            android:minWidth="1dp"
+            android:minHeight="1dp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutd4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutd3">
+
+        <ImageView
+            android:id="@+id/imgd4"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/app_name"
+            android:padding="7dp"
+            app:srcCompat="@drawable/drinks_juicy_orange" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/imgd4">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkd4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="Juicy Orange 750ml" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:textSize="12sp"
+                android:text="80tk" />
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:id="@+id/spinnerd4"
+            android:minWidth="1dp"
+            android:minHeight="1dp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutd5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutd4">
+
+        <ImageView
+            android:id="@+id/imgd5"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/app_name"
+            android:padding="7dp"
+            app:srcCompat="@drawable/drinks_pepsi_max" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/imgd5">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkd5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="Pepsi MAX 500ml" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:textSize="12sp"
+                android:text="40tk" />
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:id="@+id/spinnerd5"
+            android:minWidth="1dp"
+            android:minHeight="1dp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

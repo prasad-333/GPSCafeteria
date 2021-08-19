@@ -1,0 +1,353 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/ablToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layouttopbur"
+        android:layout_below="@+id/ablToolbar"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make Order"
+            android:fontFamily="cursive"
+            android:textSize="18sp"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="quantity"
+            android:fontFamily="cursive"
+            android:textSize="18sp"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layouttopbur">
+
+        <ImageView
+            android:id="@+id/imgb1"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/app_name"
+            android:padding="7dp"
+            app:srcCompat="@drawable/burger_kiwiburger_mcdonalds" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/imgb1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="Kiwiburger (McDonald)" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:textSize="12sp"
+                android:text="150tk" />
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:id="@+id/spinnerb1"
+            android:minWidth="1dp"
+            android:minHeight="1dp"
+            android:layout_alignParentEnd="true"
+
+            android:background="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutb2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutb1">
+
+        <ImageView
+            android:id="@+id/imgb2"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/app_name"
+            android:padding="7dp"
+            app:srcCompat="@drawable/burger_mcitaly_adagio_mcdonalds" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/imgb2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="McItaly Adagio (McD.)" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:textSize="12sp"
+                android:text="130tk" />
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:id="@+id/spinnerb2"
+            android:minWidth="1dp"
+            android:minHeight="1dp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutb3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutb2">
+
+        <ImageView
+            android:id="@+id/imgb3"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/app_name"
+            android:padding="7dp"
+            app:srcCompat="@drawable/burger_mcribster_mcdonalds" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/imgb3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="Mcribster (McDonald)" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:textSize="12sp"
+                android:text="170tk" />
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:id="@+id/spinnerb3"
+            android:minWidth="1dp"
+            android:minHeight="1dp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutb4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutb3">
+
+        <ImageView
+            android:id="@+id/imgb4"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/app_name"
+            android:padding="7dp"
+            app:srcCompat="@drawable/burger_meat_monster_burger_king" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/imgb4">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkb4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="Meat Monster King" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:textSize="12sp"
+                android:text="180tk" />
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:id="@+id/spinnerb4"
+            android:minWidth="1dp"
+            android:minHeight="1dp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutb5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutb4">
+
+        <ImageView
+            android:id="@+id/imgb5"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/app_name"
+            android:padding="7dp"
+            app:srcCompat="@drawable/burger_sprout_surprise_whopper_burger_king" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/imgb5">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkb5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="Sprout Whopper King" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:textSize="12sp"
+                android:text="200tk" />
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:id="@+id/spinnerb5"
+            android:minWidth="1dp"
+            android:minHeight="1dp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

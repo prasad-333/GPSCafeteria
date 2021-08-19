@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextaddress"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="54dp"
+        android:textColor="#ffffff"
+        android:hint="Address "
+        android:textColorHint="#c9c4c4"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editTextphone"
+        android:layout_below="@+id/editTextaddress"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:layout_margin="20dp"
+        android:hint="phone number"
+        android:textColor="#ffffff"
+        android:textColorHint="#c9c4c4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place Order"
+        android:id="@+id/buttonconfirm"
+        android:layout_above="@+id/textView36"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp"
+        android:background="#c06f06"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="An Order SMS will be send to GPS CAFE
+        \nNote: Home Delivery will cost extra 100tk "
+        android:id="@+id/textView36"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+</RelativeLayout>

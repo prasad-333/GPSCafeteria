@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ede1cb">
+
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/app_logo"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/etRegisterNmae"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageLogo"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Name"
+        android:textColor="@color/layout_border"
+        android:textColorHint="@color/layout_border"
+        android:textSize="22sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/etRegisterPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etRegisterNmae"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Phone Number"
+        android:textColor="@color/layout_border"
+        android:textColorHint="@color/layout_border"
+        android:textSize="22sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:inputType="phone"/>
+
+    <EditText
+        android:id="@+id/etRegisterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etRegisterPhoneNumber"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Password"
+        android:textColor="@color/layout_border"
+        android:textColorHint="@color/layout_border"
+        android:textSize="22sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etRegisterPassword"
+        android:textSize="22sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Register"
+        android:background="@color/layout_border"
+        android:textColor="@android:color/white"
+        android:padding="15dp"/>
+
+    <TextView
+        android:id="@+id/tvAlreadyRegistered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Registered?"
+        android:layout_below="@+id/btnRegister"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/layout_border"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:layout_marginRight="15dp"/>
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "569700959276",
+    "firebase_url": "https://gpscafeteria.firebaseio.com",
+    "project_id": "gpscafeteria",
+    "storage_bucket": "gpscafeteria.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569700959276:android:523a44028ac00907",
+        "android_client_info": {
+          "package_name": "com.example.gpscafeteria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "569700959276-r78jvh79pdt3lbsvigms0poea2309gt2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gpscafeteria",
+            "certificate_hash": "1a245a3a867cb05d4fc495012f50d18a008f3541"
+          }
+        },
+        {
+          "client_id": "569700959276-sn9bnqkg1613d8nevrv2ivcsjhmer73v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9C3M8gLc5ljDZh0YTE6bPJKFBDN8qoo4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "569700959276-sn9bnqkg1613d8nevrv2ivcsjhmer73v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

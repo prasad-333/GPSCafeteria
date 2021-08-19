@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".AboutActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GPS Cafeteria"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:fontFamily="cursive"
+        android:textStyle="normal|bold"
+        android:textSize="32sp"
+        android:textColor="#c06f06"/>
+
+    <ImageView
+        android:src="@drawable/coffee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/imageViewAbout"
+        android:layout_below="@+id/textAbout"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/textAbout2"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/imageViewAbout"
+        android:text="Foods and Drinks\nwe will provide whithin an hour
+        \nWe also takes Special Order"
+        android:textSize="18dp"
+        android:fontFamily="cursive"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/textAbout3"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textAbout2"
+        android:text="Developer:
+        \GPSCaeteria Team\n#
+        \nSpecial Thanks: Bandenawaz Bagban"
+        android:textSize="18dp"
+        android:textColor="#c06f06"
+        android:textAlignment="center"
+        android:fontFamily="cursive"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:id="@+id/textBackHome"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textAbout3"
+        android:text="Back Home"
+        android:textSize="20dp"
+        android:background="#c06f06"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

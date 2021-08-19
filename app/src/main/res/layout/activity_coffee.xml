@@ -1,0 +1,414 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coffeeFragment"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/ablToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layouttopcof"
+        android:layout_below="@+id/ablToolbar"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make Order"
+            android:fontFamily="cursive"
+            android:textSize="18sp"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="quantity"
+            android:fontFamily="cursive"
+            android:textSize="18sp"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layouttopcof">
+
+        <ImageView
+            android:id="@+id/imgcoffee1"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/app_name"
+            android:padding="7dp"
+            app:srcCompat="@drawable/coffee_americano" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/imgcoffee1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkCoffee1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="Caffe Noisette" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:textSize="12sp"
+                android:text="100tk" />
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:id="@+id/spinner1"
+            android:minWidth="1dp"
+            android:minHeight="1dp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlayout1">
+
+        <ImageView
+            android:id="@+id/imgcoffee2"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/app_name"
+            android:padding="7dp"
+            app:srcCompat="@drawable/coffee_cafe_noisette" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/imgcoffee2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkCoffee2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="Caffe Americano" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:textSize="12sp"
+                android:text="120tk" />
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:id="@+id/spinner2"
+            android:minWidth="1dp"
+            android:minHeight="1dp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlayout2">
+
+        <ImageView
+            android:id="@+id/imgcoffee3"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/app_name"
+            android:padding="7dp"
+            app:srcCompat="@drawable/coffee_macchiato" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/imgcoffee3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkCoffee3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="Caffe Macchiato" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:textSize="12sp"
+                android:text="130tk" />
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:id="@+id/spinner3"
+            android:minWidth="1dp"
+            android:minHeight="1dp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlayout3">
+
+        <ImageView
+            android:id="@+id/imgcoffee4"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/app_name"
+            android:padding="7dp"
+            app:srcCompat="@drawable/coffee_mocha" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/imgcoffee4">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkCoffee4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="Caffe Mocha" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:textSize="12sp"
+                android:text="100tk" />
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:id="@+id/spinner4"
+            android:minWidth="1dp"
+            android:minHeight="1dp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlayout4">
+
+        <ImageView
+            android:id="@+id/imgcoffee5"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/app_name"
+            android:padding="7dp"
+            app:srcCompat="@drawable/coffee_cappuccino" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/imgcoffee5">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkCoffee5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="Caffe Cappuccino" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:textSize="12sp"
+                android:text="80tk" />
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:id="@+id/spinner5"
+            android:minWidth="1dp"
+            android:minHeight="1dp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlayout5">
+
+        <ImageView
+            android:id="@+id/imgcoffee6"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/app_name"
+            android:padding="7dp"
+            app:srcCompat="@drawable/coffee_espresso" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/imgcoffee6">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkCoffee6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="Caffe Espresso" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:textSize="12sp"
+                android:text="110tk" />
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:id="@+id/spinner6"
+            android:minWidth="1dp"
+            android:minHeight="1dp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimary"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

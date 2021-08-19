@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ede1cb">
+
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/app_logo"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/etLoginPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageLogo"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Phone Number"
+        android:textColor="@color/layout_border"
+        android:textColorHint="@color/layout_border"
+        android:textSize="22sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:inputType="phone"/>
+
+    <EditText
+        android:id="@+id/etLoginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etLoginPhoneNumber"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Password"
+        android:textColor="@color/layout_border"
+        android:textColorHint="@color/layout_border"
+        android:textSize="22sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:inputType="textPassword"/>
+
+    <com.rey.material.widget.CheckBox
+        android:id="@+id/chk_remember_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember me"
+        android:textColor="@color/layout_border"
+        android:layout_below="@+id/etLoginPassword"
+        android:layout_margin="30dp"
+        android:background="#ede1cb"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chk_remember_me"
+        android:textSize="22sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Login"
+        android:background="@color/layout_border"
+        android:textColor="@android:color/white"
+        android:padding="15dp"/>
+
+    <TextView
+        android:id="@+id/tvNotRegistered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Registered?"
+        android:layout_below="@+id/btnLogin"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/layout_border"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:layout_marginRight="15dp"/>
+</RelativeLayout>
