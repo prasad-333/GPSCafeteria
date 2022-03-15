@@ -39,19 +39,19 @@
         android:fontFamily="cursive"/>
 
     <TextView
+        android:id="@+id/textAbout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:id="@+id/textAbout3"
-        android:layout_marginTop="30dp"
         android:layout_below="@+id/textAbout2"
+        android:layout_marginTop="30dp"
+        android:fontFamily="cursive"
+        android:gravity="center_horizontal"
         android:text="Developer:
         \GPSCaeteria Team\n#
-        \nSpecial Thanks: Bandenawaz Bagban"
-        android:textSize="18dp"
-        android:textColor="#c06f06"
+       "
         android:textAlignment="center"
-        android:fontFamily="cursive"/>
+        android:textColor="#c06f06"
+        android:textSize="18dp" />
 
     <TextView
         android:layout_width="wrap_content"
